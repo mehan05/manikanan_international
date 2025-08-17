@@ -27,12 +27,13 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-br from-spice-red to-spice-paprika text-white rounded-lg">
-              <Sparkles className="h-6 w-6" />
+            <div className="inline-flex items-center justify-center w-10 h-10  text-white rounded-lg">
+              {/* <Sparkles className="h-6 w-6" /> */}
+              <img src="/logo.png" alt="" className="h-7 w-24" />
             </div>
             <div>
-              <div className="font-bold text-lg text-foreground">Sri Manikandan</div>
-              <div className="text-xs text-muted-foreground -mt-1">International</div>
+              <div className="font-bold text-lg text-foreground">Sri Manikandan International</div>
+              <div className="text-xs text-muted-foreground -mt-1"></div>
             </div>
           </div>
 
@@ -92,7 +93,7 @@ const Header = () => {
                 className="mt-4"
                 onClick={() => scrollToSection("#contact")}
               >
-                Get Quote
+                Get Product
               </Button>
             </nav>
           </div>

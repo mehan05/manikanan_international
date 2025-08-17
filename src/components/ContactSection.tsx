@@ -14,19 +14,20 @@ const ContactSection = () => {
     company: "",
     phone: "",
     product: "",
-    message: ""
+    message: "",
   });
   const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Here you would typically send the form data to your backend
     toast({
       title: "Inquiry Sent!",
-      description: "Thank you for your interest. We'll contact you within 24 hours.",
+      description:
+        "Thank you for your interest. We'll contact you within 24 hours.",
     });
-    
+
     // Reset form
     setFormData({
       name: "",
@@ -34,14 +35,16 @@ const ContactSection = () => {
       company: "",
       phone: "",
       product: "",
-      message: ""
+      message: "",
     });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     }));
   };
 
@@ -53,13 +56,14 @@ const ContactSection = () => {
             Get In Touch
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to experience the finest Indian spices? Contact us for quotes, custom orders, or any inquiries
+            Ready to experience the finest Indian spices? Contact us for quotes,
+            custom orders, or any inquiries
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+        <div className="flex  justify-center items-center">
           {/* Contact Form */}
-          <Card>
+          {/* <Card>
             <CardHeader>
               <CardTitle className="text-2xl text-foreground">Send Us Your Inquiry</CardTitle>
             </CardHeader>
@@ -147,64 +151,70 @@ const ContactSection = () => {
                 </Button>
               </form>
             </CardContent>
-          </Card>
-          
+          </Card> */}
+
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="w-1/2 ">
             <Card>
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold text-foreground mb-6">
                   Contact Information
                 </h3>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-spice-red to-spice-paprika text-white rounded-full flex-shrink-0">
                       <Mail className="h-6 w-6" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground">Email Address</h4>
-                      <p className="text-muted-foreground">contact@srimanikandaninternational.com</p>
-                      <p className="text-muted-foreground">exports@srimanikandaninternational.com</p>
+                      <h4 className="font-semibold text-foreground">
+                        Email Address
+                      </h4>
+                      <a href="mailto:karthickbejobs@gmail.com" className="text-muted-foreground">
+                        karthickbejobs@gmail.com
+                      </a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-4">
                     <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-spice-red to-spice-paprika text-white rounded-full flex-shrink-0">
                       <Phone className="h-6 w-6" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground">Phone Numbers</h4>
-                      <p className="text-muted-foreground">+91 [Your Phone Number]</p>
-                      <p className="text-muted-foreground">+91 [Alternative Number]</p>
+                      <h4 className="font-semibold text-foreground">
+                        Phone Numbers
+                      </h4>
+                      <p className="text-muted-foreground">+91 9543765260</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-4">
                     <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-spice-red to-spice-paprika text-white rounded-full flex-shrink-0">
                       <MapPin className="h-6 w-6" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground">Location</h4>
+                      <h4 className="font-semibold text-foreground">
+                        Location
+                      </h4>
                       <p className="text-muted-foreground">
-                        [Your Business Address]<br />
-                        [City, State - PIN]<br />
-                        India
+                        7/648 4ROAD,SAKTHI NAGAR, <br />  MINAKKAL MANAIYAR THOTTAM MV
+                        COLONY PO <br /> THALAVASALSALEM-636112
                       </p>
                     </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
-            
+
             <Card className="bg-gradient-to-br from-spice-red to-spice-paprika text-white">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold mb-4">
                   Ready to Start Trading?
                 </h3>
                 <p className="mb-6 text-white/90">
-                  Join our growing network of satisfied customers worldwide. 
-                  Get competitive quotes and premium quality spices delivered to your market.
+                  Join our growing network of satisfied customers worldwide. Get
+                  competitive quotes and premium quality spices delivered to
+                  your market.
                 </p>
                 <div className="flex items-center gap-2 text-spice-turmeric">
                   <span className="font-semibold">Response Time:</span>

@@ -8,9 +8,9 @@ const HeroSection = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        // style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-spice-brown/80 via-spice-brown/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-spice-brown/80 via-spice-brown/60 bg-gradient-to-l to-spice-brown/80 mix-blend-multiply filter dark:to-transparent"></div>
       </div>
       
       {/* Content */}
@@ -31,8 +31,8 @@ const HeroSection = () => {
           </p>
           
           <p className="text-lg text-white/80 mb-10 max-w-2xl">
-            Authentic flavors, uncompromising quality, and unbeatable value. 
-            We bring the finest Indian spices to markets worldwide.
+            Authentic Products, uncompromising quality, and unbeatable value. 
+            We bring the finest Indian Products to markets worldwide.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
@@ -44,14 +44,7 @@ const HeroSection = () => {
               Explore Our Products
               <ArrowRight className="h-5 w-5" />
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-white/30 text-white hover:bg-white/10"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Get Quote
-            </Button>
+            
           </div>
         </div>
       </div>

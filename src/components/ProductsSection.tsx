@@ -8,33 +8,93 @@ import mixedSpicesImage from "@/assets/mixed-spices.jpg";
 const products = [
   {
     id: 1,
-    name: "Premium Red Chilli Powder",
-    image: redChiliImage,
-    description: "Vibrant red chilli powder with perfect heat balance and rich flavor, ideal for all culinary applications.",
-    features: ["High capsaicin content", "Rich color retention", "Export quality packaging"],
-    icon: Flame,
-    color: "text-spice-red"
+    name: "Red Chilli Powder",
+    image: "/chilli.png",
+    description: "Ignite your dish with our Red Chilli Powder, made from the finest crispy red chillies.",
+    features: [
+      "Made from crispy red chilli",
+      "Adds vibrant heat and color to any dish",
+      "Authentic Indian flavor"
+    ]
   },
   {
     id: 2,
-    name: "Pure Turmeric Powder",
-    image: turmericImage,
-    description: "Golden turmeric powder with high curcumin content, perfect for health-conscious consumers worldwide.",
-    features: ["High curcumin levels", "Natural golden color", "Finely ground texture"],
-    icon: Star,
-    color: "text-spice-turmeric"
+    name: "Turmeric Powder",
+    image: "/turmeric2.jpg",
+    description: "Known as 'The Golden Spice of Life', our Turmeric Powder adds vibrancy to your cooking and lifestyle.",
+    features: [
+      "Adds a brilliant golden color",
+      "Sourced for purity and potency",
+      "A staple for healthy and flavorful food"
+    ]
   },
   {
     id: 3,
-    name: "Specialty Spice Blends",
-    image: mixedSpicesImage,
-    description: "Custom spice blends including meat masala and other traditional Indian spice mixtures.",
-    features: ["Traditional recipes", "Balanced flavor profiles", "Custom blending available"],
-    icon: Sparkles,
-    color: "text-spice-paprika"
+    name: "Pure Brown Sugar",
+    image: "/jaggery2.png",
+    description: "A natural and wholesome sweetener, our Pure Brown Sugar is completely free from pesticides.",
+    features: [
+      "100% pesticide-free",
+      "Rich, natural molasses flavor",
+      "Ideal for baking and beverages"
+    ]
+  },
+  {
+    id: 4,
+    name: "Handicrafts",
+    image: "/toys.png",
+    description: "Authentic, handcrafted Sand Pots and traditional Thanjavur Toys from India.",
+    features: [
+      "Traditional Thanjavur Toys",
+      "Handmade clay Sand Pots (Manu Panai)",
+      "Perfect for cultural decor and gifting"
+    ]
+  },
+  {
+    id: 5,
+    name: "Sago Rice & Flour",
+    image: "/sagorice.jpeg",
+    description: "Our Sago Rice and Sago Flour are processed from clean, high-quality Cassava root.",
+    features: [
+      "Made from clean Cassava root",
+      "Versatile for cooking and baking",
+      "A popular gluten-free option"
+    ]
+  },
+  {
+    id: 6,
+    name: "Stainless Steel Plates",
+    image: "/steelplates2.jpeg",
+    description: "High-quality stainless steel plates designed to ensure your food stays healthy and safe.",
+    features: [
+      "Durable, high-grade stainless steel",
+      "Hygienic and easy to clean",
+      "Reusable and eco-friendly"
+    ]
+  },
+  {
+    id: 7,
+    name: "Steel Rods",
+    image: "/steelrods.jpeg",
+    description: "Durable and reliable steel rods for construction and industrial applications.",
+    features: [
+      "High-tensile strength for construction",
+      "Available in various grades and sizes",
+      "Built for structural integrity"
+    ]
+  },
+  {
+    id: 8,
+    name: "Bolts & Nuts",
+    image: "/bolt&nuts.jpeg",
+    description: "A comprehensive range of industrial-grade bolts and nuts for all your fastening needs.",
+    features: [
+      "Industrial-grade fasteners",
+      "Made from high-quality materials for durability",
+      "Available in a wide array of sizes"
+    ]
   }
 ];
-
 const ProductsSection = () => {
   return (
     <section id="products" className="py-20 bg-background">
@@ -57,11 +117,11 @@ const ProductsSection = () => {
                   alt={product.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute top-4 left-4">
+                {/* <div className="absolute top-4 left-4">
                   <div className={`inline-flex items-center justify-center w-10 h-10 bg-white/90 rounded-full ${product.color}`}>
                     <product.icon className="h-5 w-5" />
                   </div>
-                </div>
+                </div> */}
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-foreground mb-3">

@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          {/* <div>
             <h3 className="font-semibold text-lg mb-6">Contact Information</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
@@ -80,13 +80,13 @@ const Footer = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
           <p className="text-white/60">
-            © 2024 Sri Manikandan International. All rights reserved. | 
-            <span className="text-spice-turmeric"> Premium Indian Spices Worldwide</span>
+            © 2025 Sri Manikandan International. All rights reserved. | 
+            <span className="text-spice-turmeric"> Premium Indian Products Worldwide</span>
           </p>
         </div>
       </div>
