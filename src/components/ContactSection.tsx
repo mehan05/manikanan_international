@@ -154,7 +154,7 @@ const ContactSection = () => {
           </Card> */}
 
           {/* Contact Information */}
-          <div className="w-1/2 ">
+          <div className="w-full ">
             <Card>
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold text-foreground mb-6">
@@ -222,6 +222,26 @@ const ContactSection = () => {
                 </div>
               </CardContent>
             </Card>
+
+            <Card className="w-full text-white mt-5" >
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-semibold mb-4">
+                  Ready to Start Trading?
+                </h3>
+                <p className="mb-6 text-white/90">
+                  Join our growing network of satisfied customers worldwide. Get
+                  competitive quotes and premium quality spices delivered to
+                  your market.
+                </p>
+                <div className="flex items-center gap-2 text-spice-turmeric">
+                  <span className="font-semibold">Response Time:</span>
+                  <span>Within 24 hours</span>
+                </div>
+              </CardContent>
+            </Card>
+
+
+
           </div>
         </div>
       </div>
